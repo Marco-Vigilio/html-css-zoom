@@ -11,6 +11,17 @@ body{
 
 footer{
     background-color: #222222;
+    color: white;
+}
+
+i{
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+a{
+    text-decoration: none;
+    color: red;
 }
 
 /*CREARE UN CONTENITORE IN LARGHEZZA CON MARGINE AUTO
@@ -30,6 +41,34 @@ footer{
     justify-content: space-between;
 }
 
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+/*footer*/
+
+footer section>div{
+    text-align: center;
+    margin: .5rem;
+}
+
+footer section>div>i.fa-share-from-square{
+    color: #4bc800;
+}
+
+footer section:nth-child(3){
+    padding: 2rem;
+}
+
+footer section:nth-child(3)>a{
+    color: red;
+}
+
+footer section:nth-child(3):hover{
+    background-color: #4a4a4a;
+}
+
 /*da cancellare dopo*/
 
 .sfondo{
@@ -37,7 +76,12 @@ footer{
 }
 
 .quadrato{
-    height: 50px;
-    width: 50px;
+    height: 500px;
+    width: 500px;
     background-color: blue;
 }
+
+.bordi{
+    border: solid magenta 2px;
+}
+
