@@ -7,21 +7,12 @@
 body{
     font-family: 'Cabin', sans-serif;
     font-weight: bold;
-    color: #000000;
-}
-
-main{
-    background-color: yellow;
-}
-
-footer{
-    background-color: #222222;
+    background-color: aqua;
     color: white;
 }
 
 i{
-    font-size: 2rem;
-    margin-bottom: .5rem;
+    color: white;
 }
 
 a{
@@ -32,8 +23,9 @@ a{
 /*CREARE UN CONTENITORE IN LARGHEZZA CON MARGINE AUTO
  PER TUTTI (HEADER, MAIN, FOOTER)*/
  .contain{
-    max-width: 1370px;
+    max-width: 1400px;
     margin: 0 auto;
+    padding: 4rem 0 2rem;
 }
 
 /*clearflix*/
@@ -57,8 +49,51 @@ a{
 
 /*main*/
 
+main{
+    height: 88.5vh;
+    font-size: .9rem;
+}
 
+main section.special-function{
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+
+main section.specialfunction>div{
+    background-color: gray;
+}
+
+main section>div.items{
+    position: relative;
+    width: 19rem;
+    height: 12rem;
+    background-image: url('https://picsum.photos/360/230');
+    background-size:contain;
+}
+
+main section>div.items span{
+    position: absolute;
+    bottom: 0;
+    padding: .3rem;
+    background-color: gray;
+    color:white
+}
+
+
+
+main section>div.items span>i{
+    font-size: 1rem;
+    color: white;
+    opacity: none;
+    margin-right: .2rem;
+}
 /*footer*/
+
+footer{
+    background-color: #222222;
+    
+}
 
 footer section>div{
     text-align: center;
@@ -79,6 +114,11 @@ footer section:nth-child(3)>a{
 
 footer section:nth-child(3):hover{
     background-color: #4a4a4a;
+}
+
+footer section div>i{
+    font-size: 2rem;
+    margin-bottom: .5rem;
 }
 
 /*da cancellare dopo*/
