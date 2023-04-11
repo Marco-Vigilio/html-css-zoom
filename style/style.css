@@ -77,6 +77,7 @@ main section>div.items span{
     bottom: 0;
     padding: .3rem;
     background-color: gray;
+    opacity: .5;
     color:white
 }
 
